@@ -1,8 +1,8 @@
-# javascript-cheatsheet ![AUR last modified](https://img.shields.io/badge/last%20modified-today-success) ![](https://img.shields.io/badge/starred-1-orange)
+# javascript-cheatsheet ![AUR last modified](https://img.shields.io/badge/last%20modified-today-success) ![](https://img.shields.io/badge/starred-2-orange)
 That's a repository that i've learned basic tricks about javascript.
 
 ### Comment Lines
-```
+```javascript
 //single line comment
 
 /*
@@ -12,7 +12,7 @@ comments
 */
 ```
 ### Variable Declaration `var` `const` `let`
-```
+```javascript
 var x1; //variable
 var x2="name"; //string
 var x3=[1,2,"string","name"]  //array
@@ -39,7 +39,7 @@ let word='javascript';
 
 ```
 ### Comparison Operators
-```
+```javascript
 /*  
 * =   (value assignment)
 * ==  (equal to)
@@ -54,7 +54,7 @@ let word='javascript';
 ```
 
 ### Logical Operators
-```
+```javascript
 /* 
 * && (and)
 * || (or)
@@ -63,7 +63,7 @@ let word='javascript';
 ```
 
 ### Outputs
-```
+```javascript
 console.log(x1);
 alert(x1);
 window.alert(x1);
@@ -71,14 +71,14 @@ document.write(x1);
 ```
 
 ### Conditional (Ternary) Operator
-```
+```javascriptjavascript
 // Using --> () ? if condition is true : if condition is false ;
 let ter = (number===1) ? "number is equal to 1" : "number is not equal to 1" ;
 console.log(ter);
 ```
 
 ### Increment `x++` `++x`- Decrement `x--` `--x`
-```
+```javascript
 var x1=10;
 // console.log(x1++);
 // console.log(x1);
@@ -98,7 +98,7 @@ var x1=10;
 ```
 
 ### Casting
-```
+```javascript
 // Number()  ==> this is now a number.
 // var x1=Number("16");
 // String()  ==> this is now a string.
@@ -115,19 +115,19 @@ Boolean(undefined) //false
 
 ```
 ### typeof, undefined, NaN
-```
+```javascript
 //typeof (what's its type ? number ? boolean ?)
 // var x1=true;
 // console.log(typeof x1);
 ```
 
-```
+```javascript
 //undefined
 // var x1;
 // console.log(x1);
 ```
 
-```
+```javascript
 //NaN: Not A Number
 // 32/"asd"
 // var x1=prompt("please enter a number");
@@ -136,7 +136,7 @@ Boolean(undefined) //false
 ```
 
 ### Base Convertion
-```
+```javascript
 //toString(): convert any base 10 number into another base
 var number=48;
 console.log(sayi.toString(2));
@@ -146,7 +146,7 @@ console.log(sayi.toString(16))
 ```
 
 ### String Methods
-```
+```javascript
 let word = 'Html5 Css3 Js Css3 '
 
 console.log(word.length)  // how many characters
@@ -167,6 +167,72 @@ console.log(word.charAt(0));
 // substring() is similar to slice(), the difference is that substring() cannot accept negative indexes.
 console.log(word.substring(6))
 console.log(word.substring(0,5)) //0<=x<5
+
+// concat: joins two or more strings
+console.log(word.concat("added later"));
+
+//starts with ==> true
+console.log(word.startsWith('H'))
+
+//ends with ==> true
+console.log(word.endsWith('l5 '))
+
+console.log(word.indexOf('Css3'))
+console.log(word.search('Css3'))
+console.log(word.lastIndexOf('Css3'))
+
+console.log(word.split(' '))
+console.log(word.join())
+console.log(word.replace())
+console.log(word.slice())
+console.log(word.repeat())
+
+
+//escape characters
+//back slash \
+//special symbol
+console.log("\"Javascript")
+console.log('Javascript')
+```
+
+### Exception Handling
+```javascript
+// runtime errors are caught using the try-catch-finally block.
+
+try-catch-finally:
+try{
+   //error may occur
+} catch(e){
+    //if error is occured, it runs
+} finally{
+    //whether or not the error occurs, it runs
+}
+
+// throw: used to throw a custom error. we can use try..catch with throw for create custom error messages.
+var s1=5;
+try{
+    if(s1<4){
+        throw "s1 is not less than 4";
+    }
+} catch(err){
+    alert(err);
+}
+```
+
+### Functions
+```javascript
+//1.Function: without parameters
+function calculate(){
+     let number1,number2;
+     number1= Math.round(Number(prompt("First number "))) ;
+     number2= Math.round(Number(prompt("Second number ")))  ;
+     console.log((number1 + number2));
+     console.log((number1 - number2));
+     console.log((number1 / number2));
+     console.log((number1 * number2));
+}
+calculate();
+
 
 ```
 
