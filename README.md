@@ -1,5 +1,5 @@
-# javascript-cheatsheet ![AUR last modified](https://img.shields.io/badge/last%20modified-today-success) ![](https://img.shields.io/badge/starred-2-orange)
-That's a repository that i've learned basic tricks about javascript.
+# javascript-cheatsheet ![AUR last modified](https://img.shields.io/badge/last%20modified-today-success) ![](https://img.shields.io/badge/starred-3-orange)
+That's a repository that i've learned basic tricks about javascript in Front-End Bootcamp. I hope it works for you, have a good time!
 
 ### Comment Lines
 ```javascript
@@ -221,7 +221,7 @@ try{
 
 ### Functions
 ```javascript
-//1.Function: without parameters
+//1.Function: Without parameters
 function calculate(){
      let number1,number2;
      number1= Math.round(Number(prompt("First number "))) ;
@@ -232,15 +232,148 @@ function calculate(){
      console.log((number1 * number2));
 }
 calculate();
-
-
+```
+```javascript
+//2.Function: With parameters
+function calculate2(number1,number2){  //parameters
+     console.log((number1 + number2));
+     console.log((number1 - number2));
+     console.log((number1 / number2));
+     console.log((number1 * number2));
+}
+calculate2(20,5); //arguments
+```
+```javascript
+//3.Function: Return
+//if you want to return a variable, you can use return.
+function calculate3(number1){ //parameter
+     let result = number1 * number2;
+     return result;
+}
+```
+```javascript
+//4.Function: Anonymous function: without a name
+function(){
+     return "Javascript js";
+}
+```
+```javascript
+//5.Function: Arrow function
+// ()=>{}
+```
+```javascript
+//6.Function: Immediate function
+// ()()
+```
+```javascript
+function first() {
+     console.log('this is a normal function')
+}
+first()
+```
+```javascript
+// if you want to use anonymous function directly ===> function(){}
+let result2 = function(){
+     console.log('this is an anonymous function')
+}
+result2()
+```
+```javascript
+//arrow function ===> ()=>{}
+let result3 = () => {
+     console..log('this is an arrow function')
+}
+result3()
+```
+```javascript
+//immediate function
+// ===> ()()
+(function deneme() {
+     console.log('this is an immediate function')
+})()
+```
+### Loops
+```javascript
+//For loop
+for(let i=2; i<=10; i+=2){
+     let num=Number(prompt(i+". num"))
+     console.log(num)
+}
+```
+```javascript
+//While Loop
+let i=1;
+while(i<=2){
+     let num=Number(prompt(i+". num"))
+     console.log(num)
+     i+=1;
+// }
+```
+```javascript
+//Do-While Loop
+do {
+//whether the condition is met or not, it will definitely work once.
+     console.log('ran '+ i + ' times')
+     i++;
+} while (i < 3);
+```
+### If - Else
+```javascript
+if(num===1){
+     console.log("num equals 1");
+}
+else if(num===2){
+     console.log("num equals 2");
+}
+else{ console.log("number is not equal to 1 or 2.")
+```
+```javascript
+//Switch-Case
+function result() {
+     let num = Number(prompt('enter a number'))
+     switch (num) {
+     case 1:
+     console.log('num is equals to 1') break
+     case 2:
+     console.log('num is equals to 2') break
+     default:
+     console.log('num is outside of 1<=x<=2') break
+     }
+}
+result();
 ```
 
+### Arrays / Array Methods
+```javascript
+let array1 = ['html5', 'css3', 'js'];  //faster, more readable
+let array2 = new Array('html5', 'css3', 'js');
+let array3 = [1, 2, 3, 'a', 'b', ' ', 'c', -1, -2, -3]
+```
+```javascript
+//Adding
+array1.push() // add an element to the end
+array1.unshift() // add an element to the beginning
+```
+```javascript
+//Removing
+array1.pop() // remove 1 element from the end
+array1.shift() // remove1 element from the beginning
+```
+```javascript
+//Deleting
+delete array1[0]  // delete the element at the index number that we want
+splice()
+```
+```javascript
+//Sorting
+array1.sort() // sorts the elements of an array
+array1.reverse() // reverses the order of the elements in an array
+```
 - Next tricks will be added.
 
 Author
 =============
 👤 Duygu Eroğlu
 * Github: [@duygueroglu](https://github.com/duygueroglu "@duygueroglu")
-* Linkedin: [Duygu Eroğlu](https://www.linkedin.com/in/duygu-eroglu-75428796/ "Duygu Eroğlu")
+* Linkedin: [Duygu Eroğlu](https://www.linkedin.com/in/duygu-eroglu-75428796/ "Duygu Eroğlu") [![Linkedin](https://i.stack.imgur.com/gVE0j.png)](https://www.linkedin.com/in/duygu-eroglu-75428796/)
 
