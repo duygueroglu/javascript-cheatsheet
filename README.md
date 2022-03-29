@@ -375,5 +375,5 @@ Author
 =============
 👤 Duygu Eroğlu
 * Github: [@duygueroglu](https://github.com/duygueroglu "@duygueroglu")
-* Linkedin: [Duygu Eroğlu](https://www.linkedin.com/in/duygu-eroglu-75428796/ "Duygu Eroğlu") [![Linkedin](https://i.stack.imgur.com/gVE0j.png)](https://www.linkedin.com/in/duygu-eroglu-75428796/)
-
+* Linkedin: <a href="https://www.linkedin.com/in/duygu-eroglu-75428796/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+* Instagram: <a href="https://www.instagram.com/duygueroglu" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
