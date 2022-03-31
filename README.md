@@ -369,6 +369,124 @@ splice()
 array1.sort() // sorts the elements of an array
 array1.reverse() // reverses the order of the elements in an array
 ```
+```javascript
+//Join()
+// Returns string value by combining all data in array, separates in default with comma
+let array1 = ['js','html','css']
+let word = array1.join()   // output: "js,html,css"
+word = array1.join('')    //output: "jshtmlcss"
+word = array1.join(' & ')  //output: "js&html&css"
+```
+```javascript
+//Concat()
+//It is useful for merge strings
+let word1 = 'Front'
+let word2 = ' End'
+
+let merge = word1 + word2  //normal
+console.log(merge)
+
+let merge2 = word1.concat(word2) //concat
+console.log(merge2)
+```
+```javascript
+//Splice()
+//Adding and removing in a mass 
+let arrays = [1, 2, 3, 4, 5, 6, 7]
+arrays.splice(2, 4)  //from 2. index, delete 4 index
+let arrayd = [1, 2, 3, 4, 5, 6, 7]
+arrayd.splice(3, 0, 'new', 'added') //from 3. index, delete 0 index, add "new" and "added" elements
+```
+```javascript
+//Slice()
+//Copying array
+let oldArray = [1, 2, 3, 4, 5, 6, 7]
+let newArray = oldArray.slice(3) //start from 3. index, copy until end of the array
+```
+
+### Date Tutorials
+```javascript
+//Date
+let dating = new Date()
+
+//get
+console.log(dating.getHours())
+console.log(dating.getFullYear())
+
+//set
+console.log(new Date('2022-1-1'))
+console.log(new Date(1000000000))
+```
+
+### Objects
+```javascript
+//Object is a standalone entity, with properties and type, camelCase
+
+//Literal Object(Arrow Function)
+let object1=()=>{
+   // let array1=[];
+   let array = new Array();
+   console.log(array1)
+   // let object2={};
+   let object2 = new Object();
+   console.log(object2);
+} object1();
+
+//Object Function
+let object2 = () => {
+   let person = {
+   name: 'Duygu',
+   surname: 'Eroğlu'
+   calc: function(value1,value2){
+   return value1+value2;
+   }
+}
+console.log(person.calc(10,10))
+}
+object2()
+
+//Nested Object
+let object3 = () => {
+   let person = {
+   name: 'Duygu',
+   surname: 'Eroğlu'
+   calc: function(value1,value2){
+   return value1+value2;
+   },
+   job:{
+      jobName:"Software Engineer",
+      jobType:"Engineer"
+   }
+}
+console.log(person.calc(10,10))
+console.log(person.job.jobName);
+}
+object3()
+
+//Object Arrays
+let objectArray = () => {
+   let person = {
+   name: 'Duygu',
+   surname: 'Eroğlu'
+   calc: function(value1,value2){
+   return value1+value2;
+   },
+   job:{
+      jobName:"Software Engineer",
+      jobType:"Engineer"
+   },
+   languages:['JS','Java','C#','Python'],
+   languageProperties:{
+      roles: 'xyz',
+   },
+}
+console.log(person)
+console.log(person.languages[2])
+console.log(person.job.jobName);
+}
+objectArray()
+```
+
 - Next tricks will be added.
 
 Author
