@@ -487,6 +487,63 @@ console.log(person.job.jobName);
 objectArray()
 ```
 
+### Template Literal
+```javascript
+/*
+Template literal is a standard that is using for create strings and to format them as dynamically.
+It comes with ES6.
+It is for easier using.
+There are three using type for Template Literal.
+*/
+```
+```javascript
+//1. Multi Line Template Literal
+let templateLiteralMultiLine = () => {
+   let normalString = 'That's how\nnormal string using as multi line'
+   console.log(normalString)
+   
+   let templateLiteralString = `That's how
+template literal using as multi line`
+   console.log(templateLiteralString)
+}
+templateLiteralMultiLine();
+```
+```javascript
+//2. Interpolation: for call a variable `${}`
+let templateLiteralInterpolation = () => {
+   let course = 'frontend',
+   language = 'javascript'
+   console.log('Course: '+ course + 'Language: '+ language)
+   console.log(`Course: ${course} Language: ${language}`)
+}
+templateLiteralInterpolation();
+```
+```javascript
+//3. Html Template
+let templateLiteralHtmlTemplate = () => {
+   let course = 'frontend',
+   let language = 'javascript'
+
+/* normal using
+let html = 
+   "<ul>" + 
+      "<li>" + course  +  "</li> +
+      "<li>" + language  +  "</li> +
+   "</ul>";
+*/
+
+//Template literal using
+let html = `
+<ul>
+   <li>${course}</li>
+   <li>${language}</li>
+</ul>
+`
+document.body.innerHTML = html
+}
+templateLiteralHtmlTemplate();
+```
+
 - Next tricks will be added.
 
 Author
